@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('../assets/font/PressStart2P.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    color: white;
+    font-family: 'PressStart2P';
+}
+
+.game-content {
+    position: relative;
+    flex-direction: column;
+}
+
+.bar-healths-timer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.timer {
+    background: transparent;
+    color: white;
+    font-size: xx-large;
+    height: 50px;
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 0 20px;
+}
+
+.player-health {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.player-health-total {
+    height: 30px;
+    width: 100%;
+}
+
+.player-health-change {
+    position: absolute;
+    background: linear-gradient(to left, #11998e, #38ef7d);
+    /*border-radius: 2px;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.enemy-health {
+    width: 100%;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.enemy-health-total {
+    background-color: transparent;
+    height: 30px;
+}
+
+.enemy-health-change {
+    position: absolute;
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    /*border-radius: 2px;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.display-text {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: x-large;
+}
+
+.display-button {
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    font-weight: inherit;
+    color: white;
+    border: none;
+    /*padding: 15px 25px;
+    border-radius: 4px;
+    border: 2px solid white;*/
+    background: transparent
+        /*linear-gradient(315deg, #bc4e9c, #f80759)*/
+    ;
+}
+
+.display-button:hover {
+    opacity: .75;
+    ;
+}
+
+.keys-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.keys {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px 20px;
+    color: #aaa;
+    font-size: 7px;
+}
+
+.keys-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 17.5px;
+}
+
+.keys-list li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 5px;
+}
+
+.keys-list li span {
+    padding: 5px;
+    border: 2px solid #aaa;
+    border-radius: 7px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <title>Samurai — Protocol</title>
+</head>
+
+<body>
+    <div class="game-content">
+        <div class="bar-healths-timer">
+            <div class="player-health">
+                <div class="player-health-total"></div>
+                <div id="playerHealth" class="player-health-change"></div>
+            </div>
+            <div id="timer" class="timer">60</div>
+            <div class="enemy-health">
+                <div class="enemy-health-total"></div>
+                <div id="enemyHealth" class="enemy-health-change"></div>
+            </div>
+        </div>
+        <div class="display-text">
+            <span id="displayText">Tie</span>
+            <a href="/"><button class="display-button">▶︎ START</button></a>
+        </div>
+        <canvas></canvas>
+        <div class="keys-content">
+            <div class="keys">
+                <div class="keys-list">
+                    <li><span>A</span><p>Left</p></li>
+                    <li><span>D</span> <p>Right</p></li>
+                    <li><span>W</span><p>Jump</p></li>
+                    <li><span>S</span><p>Attack</p></li>
+                </div>
+                <div class="keys-list">
+                    <li><span>←</span><p>Left</p></li>
+                    <li><span>→</span><p>Right</p></li>
+                    <li><span>↑</span><p>Jump</p></li>
+                    <li><span>↓</span><p>Attack</p></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/classes.js"></script>
+    <script src="/js/min.js"></script>
+</body>
+
+</html>
