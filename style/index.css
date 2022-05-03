@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #111;
+    background: white;
     color: white;
     font-family: 'PressStart2P';
 }
@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .timer {
@@ -115,50 +115,22 @@ body {
     font-weight: inherit;
     color: white;
     border: none;
-    /*padding: 15px 25px;
-    border-radius: 4px;
-    border: 2px solid white;*/
-    background: transparent
-        /*linear-gradient(315deg, #bc4e9c, #f80759)*/
-    ;
+    background: transparent;
+    animation: opacity .8s infinite ease-in-out ;
 }
 
 .display-button:hover {
-    opacity: .75;
-    ;
+    animation: none;
 }
 
-.keys-content {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
-
-.keys {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px 20px 20px;
-    color: #aaa;
-    font-size: 7px;
-}
-
-.keys-list {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 17.5px;
-}
-
-.keys-list li {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 5px;
-}
-
-.keys-list li span {
-    padding: 5px;
-    border: 2px solid #aaa;
-    border-radius: 7px;
+@keyframes opacity {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
